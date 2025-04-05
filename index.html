@@ -2,85 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Ad-Powered Site</title>
-  
-  <!-- Google AdSense Script -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Web Tips - Home</title>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173926747034822"
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173926747034822"
      crossorigin="anonymous"></script>
-  
+
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      line-height: 1.6;
     }
-
     header {
       background-color: #4a90e2;
-      width: 100%;
+      color: white;
       padding: 1rem;
       text-align: center;
-      color: white;
-      font-size: 1.5rem;
     }
-
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #555;
+    }
     main {
-      margin-top: 2rem;
-      width: 90%;
-      max-width: 800px;
+      max-width: 900px;
+      margin: 2rem auto;
       background: white;
       padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .ad {
+      margin: 2rem 0;
       text-align: center;
     }
-
-    .ad-container {
-      margin: 2rem 0;
-    }
-
     footer {
-      margin-top: 3rem;
+      text-align: center;
       padding: 1rem;
-      color: #777;
-      font-size: 0.9rem;
+      background: #eee;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    Welcome to My Simple Ad Website
+    <h1>Learn Web Tips</h1>
+    <p>Simple Guides for Learning Web Development</p>
   </header>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
   <main>
-    <p>This is a demo website built with just HTML and CSS, designed to show Google AdSense ads.</p>
+    <section id="home">
+      <h2>Welcome to Learn Web Tips</h2>
+      <p>We're here to help beginners learn web development step by step with easy-to-understand tutorials and tips.</p>
+      
+      <div class="ad">
+        <!-- AdSense Ad Slot -->
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
 
-    <!-- Google AdSense Ad Slot -->
-    <div class="ad-container">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-           data-ad-slot="1234567890"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
+      <h3>Latest Post</h3>
+      <p><strong>How to Start HTML and CSS in 2025</strong> - Starting with web development? Learn how to build your first HTML page and style it with CSS.</p>
+    </section>
 
-    <p>You can place more ads like this on different pages or positions.</p>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Learn Web Tips is an independent blog focused on helping new web developers build skills in HTML, CSS, and JavaScript. We share tutorials, tips, and free resources to help you grow.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have questions or feedback, feel free to reach out:</p>
+      <ul>
+        <li>Email: support@learnwebtips.com</li>
+        <li>Twitter: @learnwebtips</li>
+      </ul>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>We respect your privacy. This site uses Google AdSense, which may collect data for personalized ads. We do not collect personal information from users directly. For more, see <a href="https://policies.google.com/technologies/ads" target="_blank">Google Ads Policies</a>.</p>
+    </section>
   </main>
 
   <footer>
-    © 2025 MyAdSite. All rights reserved.
+    &copy; 2025 Learn Web Tips. All rights reserved.
   </footer>
 
 </body>
